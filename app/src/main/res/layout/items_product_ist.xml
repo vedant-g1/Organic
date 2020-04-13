@@ -87,8 +87,7 @@
                 android:layout_width="70dp"
                 android:layout_alignParentEnd="true"
                 android:layout_height="wrap_content"
-                android:autofillHints="no"
-                android:inputType="text">
+                android:inputType="number">
             </EditText>
         </RelativeLayout>
     </LinearLayout>

@@ -13,6 +13,7 @@
     </androidx.appcompat.widget.SearchView>
 
     <include
+        android:id="@+id/customer_info"
         layout="@layout/pending_request_items">
     </include>
 
