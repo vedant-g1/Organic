@@ -1,10 +1,14 @@
 package com.saigopal.organic;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -51,7 +55,26 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(viewPagerAdapter);
 
 
-
-
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater mn = getMenuInflater();
+        mn.inflate(R.menu.main_menu,menu);
+        return (true);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.location:
+                Toast.makeText(this, "Location Clicked", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.notification:
+                Toast.makeText(this, "Notification Clicked", Toast.LENGTH_SHORT).show();
+                return  (true);
+        }
+        return (true);
+    }
+
 }
