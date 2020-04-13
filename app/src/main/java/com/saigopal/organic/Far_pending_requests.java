@@ -30,7 +30,7 @@ public class Far_pending_requests extends Fragment
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
         pendingReqRecyclerView.setLayoutManager(layoutManager);
 
-        String json;
+       /* String json;
         InputStream is = null;
         try {
             is = Objects.requireNonNull(getActivity()).getAssets().open("data.json");
@@ -40,16 +40,14 @@ public class Far_pending_requests extends Fragment
             is.close();
             json = new String(buffer, StandardCharsets.UTF_8);
             Toast.makeText(getActivity(), ""+json, Toast.LENGTH_SHORT).show();
-
-
-
-
         }
         catch (IOException e)
         {
             Toast.makeText(getActivity(), ""+e, Toast.LENGTH_SHORT).show();
             e.printStackTrace();
         }
+
+        */
 
 
 
