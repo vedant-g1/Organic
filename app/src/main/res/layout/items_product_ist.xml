@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="#FFF"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_alignParentStart="true"
+                android:id="@+id/product_name"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="MILK">
+            </TextView>
+            <TextView
+                android:layout_toEndOf="@+id/product_name"
+                android:id="@+id/product_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3Lit">
+            </TextView>
+
+            <TextView
+                android:layout_toEndOf="@+id/product_quantity"
+                android:id="@+id/product_amount"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="35/Lit">
+            </TextView>
+
+            <EditText
+                android:id="@+id/enter_amount"
+                android:layout_marginStart="10dp"
+                android:layout_width="70dp"
+                android:layout_alignParentEnd="true"
+                android:layout_height="wrap_content"
+                android:autofillHints="no"
+                android:inputType="text">
+            </EditText>
+        </RelativeLayout>
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_alignParentStart="true"
+                android:id="@+id/product_name1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="CURD">
+            </TextView>
+            <TextView
+                android:layout_toEndOf="@+id/product_name1"
+                android:id="@+id/product_quantity1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1Lit">
+            </TextView>
+
+            <TextView
+                android:layout_toEndOf="@+id/product_quantity1"
+                android:id="@+id/product_amount1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="45/Lit">
+            </TextView>
+
+            <EditText
+                android:id="@+id/enter_amount1"
+                android:layout_marginStart="10dp"
+                android:layout_width="70dp"
+                android:layout_alignParentEnd="true"
+                android:layout_height="wrap_content"
+                android:autofillHints="no"
+                android:inputType="text">
+            </EditText>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
+
+
